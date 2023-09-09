@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.7s;
+}
+
+@font-face {
+  font-family: blackops;
+  src: url(../font/BlackOpsOne-Regular.ttf);
+}
+@font-face {
+  font-family: chakra;
+  src: url(../font/ChakraPetch-Regular.ttf);
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .cart {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  main > .cart {
+    width: 100%;
+  }
+}
+main > .cart > .dn {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main > .cart > .dn > i {
+  font-size: 25px;
+  cursor: pointer;
+}
+main > .cart > .dn > div {
+  width: 48%;
+  height: 50%;
+  align-self: center;
+  border-radius: 20px;
+  position: absolute;
+  left: 25px;
+  display: flex;
+  align-items: center;
+}
+main > .cart > .dn > div > span {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+main > .cart > .btn {
+  width: 30%;
+  height: 0;
+  overflow: hidden;
+  margin-right: 150px;
+  margin-left: 150px;
+  opacity: 0;
+}
+@media screen and (max-width: 992px) {
+  main > .cart > .btn {
+    display: none;
+  }
+}
+main > .cart > #bank-c {
+  width: 80%;
+  height: 50%;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.4s !important;
+}
+main > .cart > #bank-c > h4 {
+  font-family: blackops;
+  width: 80%;
+  display: flex;
+}
+main > .cart > #bank-c > #num {
+  justify-content: center;
+  margin-top: 50px;
+  letter-spacing: 5px;
+  font-size: 35px;
+}
+main > .cart > #bank-c > #info {
+  display: flex;
+  justify-content: space-between;
+}
+main > .cart > #bank-c > #info > span {
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+main > .input {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  main > .input {
+    width: 100%;
+  }
+}
+main > .input > #inp {
+  width: 80%;
+  height: 500px;
+  border-radius: 20px;
+  font-family: chakra;
+}
+main > .input > #inp > h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 45px;
+  font-family: blackops;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+main > .input > #inp > .num {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+main > .input > #inp > .num > input {
+  letter-spacing: 5px;
+  padding-left: 10px;
+  border: none;
+}
+main > .input > #inp > .info {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+main > .input > #inp > .info > input {
+  padding-left: 14px;
+  margin: 20px;
+  border: none;
+}
+main > .input > #inp > .info > span {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main > .input > #inp > .btn {
+  margin: 70px auto;
+  height: 70px;
+  width: 150px;
+}
+main > .input > #inp > .info > input,
+main > .input > #inp > .num > input {
+  width: 15%;
+  height: 30px;
+  font-family: chakra;
+  font-size: 20px;
+}
+main > .input > #inp > .info > input:focus,
+main > .input > #inp > .num > input:focus {
+  border: none;
+  outline: none;
+}
+
+.btn {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: blackops;
+  border-radius: 10px;
+}
+
+.day {
+  background-image: linear-gradient(to left bottom, #d3e0f5, #bdd7f4, #a4cff1, #86c8ee, #61c1e8);
+}
+.day > .cart > .dn > i {
+  color: #343148;
+}
+.day > .cart > .dn > div {
+  border: 1px solid #343148;
+}
+.day > .cart > .dn > div > span {
+  background-color: #343148;
+}
+.day > .cart > .btn {
+  color: #343148;
+  background-color: rgb(241, 241, 241);
+  border: 2px solid #343148;
+  outline: 2px solid #343148;
+  outline-offset: 5px;
+}
+.day > .cart > #bank-c {
+  background: rgb(241, 241, 241);
+  color: #343148;
+  border: 2px solid #343148;
+}
+.day > .input > #inp {
+  background-color: rgb(241, 241, 241);
+  color: #343148;
+  border: 2px solid #343148;
+}
+.day > .input > #inp > .btn {
+  color: #343148;
+  background-color: rgb(241, 241, 241);
+  border: 2px solid #343148;
+  outline: 2px solid #343148;
+  outline-offset: 5px;
+}
+.day > .input > #inp > .info > input,
+.day > .input > #inp > .num > input {
+  border-bottom: 2px solid #343148;
+  background-color: transparent;
+  color: #343148;
+}
+.day > .input > #inp > .info > input:focus,
+.day > .input > #inp > .num > input:focus {
+  border-bottom: 2px solid #2d2d2d;
+}
+
+.btn {
+  outline: 2px solid #343148;
+}
+
+.night {
+  background-image: none;
+  background-color: #343148;
+}
+.night > .cart > .dn > i {
+  color: rgb(241, 241, 241);
+}
+.night > .cart > .dn > div {
+  border: 1px solid rgb(241, 241, 241);
+}
+.night > .cart > .dn > div > span {
+  background-color: rgb(241, 241, 241);
+}
+.night > .cart > .btn {
+  color: rgb(241, 241, 241);
+  background-color: #343148;
+  border: 2px solid rgb(241, 241, 241);
+  outline: 2px solid rgb(241, 241, 241);
+  outline-offset: 5px;
+}
+.night > .cart > #bank-c {
+  background: #343148;
+  color: rgb(241, 241, 241);
+  border: 2px solid rgb(241, 241, 241);
+}
+.night > .input > #inp {
+  background-color: #343148;
+  color: rgb(241, 241, 241);
+  border: 2px solid rgb(241, 241, 241);
+}
+.night > .input > #inp > .btn {
+  color: #343148;
+  background-color: rgb(241, 241, 241);
+  border: 2px solid #343148;
+  outline: 2px solid #343148 241, 241, 241;
+  outline-offset: 5px;
+}
+.night > .input > #inp > .info > input,
+.night > .input > #inp > .num > input {
+  border-bottom: 2px solid rgb(241, 241, 241);
+  background-color: transparent;
+  color: rgb(241, 241, 241);
+}
+.night > .input > #inp > .info > input:focus,
+.night > .input > #inp > .num > input:focus {
+  border-bottom: 2px solid rgb(241, 241, 241);
+}
+.night .btn {
+  outline: 2px solid rgb(241, 241, 241);
+}/*# sourceMappingURL=master.css.map */
